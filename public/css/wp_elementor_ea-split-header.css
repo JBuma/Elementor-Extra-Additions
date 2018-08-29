@@ -1,0 +1,30 @@
+.elementor-ea__split-header {
+    margin: 0;
+    white-space: nowrap;
+}
+
+.elementor-ea__split-header:not(.word) {
+    position: relative;
+    width: min-content;
+    width: -moz-min-content;
+}
+
+/* .elementor-ea__split-header.value:before {
+    width: 50%;
+    content: attr(data-heading);
+    position: absolute;
+    left: 0;
+    overflow: hidden;
+    color: transparent; 
+
+}*/
+
+.elementor-ea__split-header.value:not(.word):after {
+    /* width: 50%; */
+    content: attr(data-heading);
+    position: absolute;
+    left: 0;
+    overflow: hidden;
+    word-wrap: initial;
+    width: 100 - inherit;
+}
